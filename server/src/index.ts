@@ -4,13 +4,13 @@ import financialRecordRouter from "./routes/financial-records";
 import cors from "cors";
 
 const app: Express = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(cors());
 
 const mongoURI: string =
-  "mongodb+srv://Killercavin:<password>t@financeexpensetracker.pdtc85v.mongodb.net/";
+  "mongodb+srv://Killercavin:<password>@financeexpensetracker.pdtc85v.mongodb.net/";
 
 mongoose
   .connect(mongoURI)
